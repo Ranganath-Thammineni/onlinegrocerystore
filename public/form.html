@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="https://www.designmantic.com/blog/wp-content/uploads/2025/02/Walmart-Logo-Icon.png" width= "40" alt="Logo" class="me-2">
+        Welcome to the Product Store!
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/form.html">Add</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/inventory">Inventory</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </header> 
+
+    <form id="productForm" action="/add-product" method="POST">
+    <label for="name">Product Name:</label>
+    <input type="text" id="name" name="name" required />
+    
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+    
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" step="0.01" required />
+    
+    <label for="image_url">Image URL:</label>
+    <input type="url" id="image_url" name="image_url" required />
+    
+    <button type="submit">Add Product</button>
+</body>
+</html>

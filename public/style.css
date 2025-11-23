@@ -1,0 +1,11 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: lightblue;
+    }
+
+.info{
+    height: 90vh;
+    background-image: url("https://wallpapers.com/images/featured/grocery-store-background-c41zd4y08ityrnw1.jpg");
+    background-size: cover; 
+}
