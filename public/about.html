@@ -1,45 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <style>
+    /* Custom styles for the testimonial section */
+    .testimonial-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 3px solid #0d6efd; /* Primary color border */
+    }
+
+    .testimonial-card {
+      min-height: 350px; /* Ensures consistent card height */
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.designmantic.com/blog/wp-content/uploads/2025/02/Walmart-Logo-Icon.png" width="40"
+            alt="Logo" class="me-2">
+          Welcome to Product Store!
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/form.html">Add</a></li>
+            <li class="nav-item"><a class="nav-link" href="/inventory">Inventory</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="about py-5 bg-white">
     <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#"> 
-        <img src="https://www.designmantic.com/blog/wp-content/uploads/2025/02/Walmart-Logo-Icon.png" width= "40" alt="Logo" class="me-2">
-        Welcome to Product Store!
-      </a>
-
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/form.html">Add</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/inventory">Inventory</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/about.html">About</a></li>
-        </ul>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-4 fw-bold text-center text-primary mb-4">🛒 About Product Store</h2>
+          <p class="lead text-center text-secondary">
+            Welcome to the Product Store, your dedicated partner for the best online grocery and product shopping
+            experience. Our mission is to provide **high-quality goods**, **fast delivery**, and **unbeatable prices**
+            right to your doorstep.
+          </p>
+          <hr class="my-4">
+          <h3 class="h4 text-center mb-4">Our Commitment</h3>
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <i class="bi bi-truck fs-3 text-success d-block"></i>
+              <p class="fw-bold">Fast Delivery</p>
+              <p class="small text-muted">Same-day shipping for most local orders.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <i class="bi bi-bag-check fs-3 text-info d-block"></i>
+              <p class="fw-bold">Quality Assured</p>
+              <p class="small text-muted">Hand-picked and carefully inspected products.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <i class="bi bi-wallet fs-3 text-danger d-block"></i>
+              <p class="fw-bold">Great Value</p>
+              <p class="small text-muted">Competitive pricing and daily exclusive deals.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-    </header>
-    <br>
-<h1 style="text-align: center;"> Welcome to the About Page! </h1>
-</body>
-</html>
+  </section>
 
+  <section class="testimonials py-5 bg-light">
+    <div class="container">
+      <h2 class="display-5 fw-bold text-center mb-5">Hear From Our Customers</h2>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-0 testimonial-card p-4 text-center">
+                  <div class="card-body">
+                    <img src="https://i.pravatar.cc/150?img=1" class="rounded-circle mb-3 testimonial-img"
+                      alt="Customer 1">
+                    <h5 class="card-title fw-bold">Sarah J.</h5>
+                    <p class="text-muted small mb-3">Online Shopper</p>
+                    <p class="card-text fst-italic">"The quality of the fresh produce is outstanding! My order arrived in
+                      perfect condition and much faster than expected. Product Store is now my go-to for groceries."</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4 d-none d-md-block">
+                <div class="card shadow-sm border-0 testimonial-card p-4 text-center">
+                  <div class="card-body">
+                    <img src="https://i.pravatar.cc/150?img=2" class="rounded-circle mb-3 testimonial-img"
+                      alt="Customer 2">
+                    <h5 class="card-title fw-bold">Mark T.</h5>
+                    <p class="text-muted small mb-3">Small Business Owner</p>
+                    <p class="card-text fst-italic">"Their inventory management system is seamless. Adding products is so
+                      easy with the 'Add' page, and I can always trust the prices are accurate. Highly recommended!"</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4 d-none d-lg-block">
+                <div class="card shadow-sm border-0 testimonial-card p-4 text-center">
+                  <div class="card-body">
+                    <img src="https://i.pravatar.cc/150?img=3" class="rounded-circle mb-3 testimonial-img"
+                      alt="Customer 3">
+                    <h5 class="card-title fw-bold">Emily R.</h5>
+                    <p class="text-muted small mb-3">First-time User</p>
+                    <p class="card-text fst-italic">"I love the clean and simple layout. Finding the 'Inventory' page to
+                      check stock was very straightforward. A genuinely pleasant and efficient shopping experience."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-0 testimonial-card p-4 text-center">
+                  <div class="card-body">
+                    <img src="https://i.pravatar.cc/150?img=4" class="rounded-circle mb-3 testimonial-img"
+                      alt="Customer 4">
+                    <h5 class="card-title fw-bold">David L.</h5>
+                    <p class="text-muted small mb-3">Tech Enthusiast</p>
+                    <p class="card-text fst-italic">"Excellent service! I used the 'Add' feature to log a new electronic
+                      component, and the process was instant. The site performs flawlessly across all devices."</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4 d-none d-md-block">
+                <div class="card shadow-sm border-0 testimonial-card p-4 text-center">
+                  <div class="card-body">
+                    <img src="https://i.pravatar.cc/150?img=5" class="rounded-circle mb-3 testimonial-img"
+                      alt="Customer 5">
+                    <h5 class="card-title fw-bold">Jessica A.</h5>
+                    <p class="text-muted small mb-3">Home Cook</p>
+                    <p class="card-text fst-italic">"The variety is fantastic, and the prices beat my local store. I
+                      especially appreciate the transparency of the product details on the 'Inventory' section."</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4 d-none d-lg-block">
+                <div class="card shadow-sm border-0 testimonial-card p-4 text-center">
+                  <div class="card-body">
+                    <img src="https://i.pravatar.cc/150?img=6" class="rounded-circle mb-3 testimonial-img"
+                      alt="Customer 6">
+                    <h5 class="card-title fw-bold">Robert K.</h5>
+                    <p class="text-muted small mb-3">Frequent Shopper</p>
+                    <p class="card-text fst-italic">"I rely on Product Store for my weekly supplies. The team is clearly
+                      dedicated to customer satisfaction. Keep up the amazing work on the 'About' page transparency!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Product Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -13,11 +13,12 @@
 <body>
     <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#"> 
-        <img src="https://www.designmantic.com/blog/wp-content/uploads/2025/02/Walmart-Logo-Icon.png" width= "40" alt="Logo" class="me-2">
-        Welcome to Product Store!
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.designmantic.com/blog/wp-content/uploads/2025/02/Walmart-Logo-Icon.png" width="40" alt="Logo" class="me-2">
+                    Welcome to Product Store!
+                </a>
       </a>
 
       <!-- Toggler for mobile -->
@@ -38,8 +39,368 @@
     </div>
   </nav>
     </header>
-<section class="info"> 
-</section>    
+
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-primary">Fresh Groceries Delivered</h1>
+                    <p class="lead mb-4">Get the freshest produce, pantry essentials, and household items delivered right to your doorstep. Quality guaranteed!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="/inventory" class="btn btn-primary btn-lg px-4 me-md-2">Shop Now</a>
+                        <a href="/form.html" class="btn btn-outline-secondary btn-lg px-4">Add Product</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fresh Groceries" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Why Choose Our Store?</h2>
+                    <p class="lead text-light">Experience the best grocery shopping with our premium services</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="bi bi-truck fs-4"></i>
+                                🚚
+                            </div>
+                            <h5 class="card-title">Fast Delivery</h5>
+                            <p class="card-text text-light">Get your groceries delivered within 2 hours of ordering. Fresh and on time, every time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="bi bi-shield-check fs-4"></i>
+                                🛡️
+                            </div>
+                            <h5 class="card-title">Quality Guaranteed</h5>
+                            <p class="card-text text-light">We source only the freshest produce and highest quality products for our customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="bi bi-currency-dollar fs-4"></i>
+                                💰
+                            </div>
+                            <h5 class="card-title">Best Prices</h5>
+                            <p class="card-text text-light">Competitive pricing with regular discounts and special offers for our loyal customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Shop by Category</h2>
+                    <p class="lead text-light">Find everything you need in our organized categories</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Fresh Produce" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fresh Produce</h5>
+                            <p class="card-text">Fruits, vegetables, and herbs</p>
+                            <a href="/inventory" class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Dairy Products" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dairy & Eggs</h5>
+                            <p class="card-text">Milk, cheese, yogurt, and eggs</p>
+                            <a href="/inventory" class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Pantry Essentials" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pantry Essentials</h5>
+                            <p class="card-text">Rice, pasta, canned goods</p>
+                            <a href="/inventory" class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1585515656e8f-1e73a5b726fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Beverages" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Beverages</h5>
+                            <p class="card-text">Juices, soft drinks, water</p>
+                            <a href="/inventory" class="btn btn-outline-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">What Our Customers Say</h2>
+                    <p class="lead text-light">Join thousands of satisfied customers</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <p class="card-text">"Amazing service! Fresh products delivered right on time. The quality is consistently excellent."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                                     class="rounded-circle me-3" width="50" height="50" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">John Smith</h6>
+                                    <small class="text-light">Regular Customer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <p class="card-text">"Love the variety and convenience. The app is easy to use and delivery is super fast!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                                     class="rounded-circle me-3" width="50" height="50" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Sarah Johnson</h6>
+                                    <small class="text-light">Premium Member</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-3">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <p class="card-text">"Best grocery delivery service in town. Competitive prices and excellent customer service."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
+                                     class="rounded-circle me-3" width="50" height="50" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Mike Davis</h6>
+                                    <small class="text-light">Loyal Customer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-2">Stay Updated!</h3>
+                    <p class="mb-3">Get the latest offers and updates delivered to your inbox.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="row g-2">
+                        <div class="col-auto flex-grow-1">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-light">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <img src="https://www.designmantic.com/blog/wp-content/uploads/2025/02/Walmart-Logo-Icon.png" width="30" alt="Logo" class="me-2">
+                        FreshMart Online
+                    </h5>
+                    <p class="text-light mb-3">Your trusted partner for fresh groceries, quality products, and convenient home delivery since 2020.</p>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-light text-decoration-none" title="Follow us on Facebook">
+                            <i class="fab fa-facebook fs-5">📘</i>
+                        </a>
+                        <a href="#" class="text-light text-decoration-none" title="Follow us on Twitter">
+                            <i class="fab fa-twitter fs-5">🐦</i>
+                        </a>
+                        <a href="#" class="text-light text-decoration-none" title="Follow us on Instagram">
+                            <i class="fab fa-instagram fs-5">📷</i>
+                        </a>
+                        <a href="#" class="text-light text-decoration-none" title="Subscribe to our YouTube">
+                            <i class="fab fa-youtube fs-5">�</i>
+                        </a>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" style="height: 25px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard" style="height: 25px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" style="height: 25px;">
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" class="text-light text-decoration-none hover-link">🏠 Home</a></li>
+                        <li class="mb-2"><a href="/inventory" class="text-light text-decoration-none hover-link">🛒 Shop Now</a></li>
+                        <li class="mb-2"><a href="/form.html" class="text-light text-decoration-none hover-link">➕ Add Product</a></li>
+                        <li class="mb-2"><a href="/about.html" class="text-light text-decoration-none hover-link">ℹ️ About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">📞 Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">❓ Help & FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Shop Categories</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🥬 Fresh Produce</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🥛 Dairy & Eggs</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🍖 Meat & Seafood</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🍞 Bakery & Bread</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🥫 Pantry Essentials</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🧃 Beverages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Customer Service</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">📋 My Orders</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🚚 Track Delivery</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">↩️ Returns & Refunds</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">⭐ Reviews</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">� Gift Cards</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-link">🎯 Loyalty Program</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">📍 Store Information</h6>
+                    <div class="text-light mb-3">
+                        <div class="d-flex align-items-start mb-2">
+                            <span class="me-2">🏢</span>
+                            <div>
+                                <strong>Main Store Address:</strong><br>
+                                456 Fresh Market Avenue<br>
+                                Downtown District, NY 10001
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2">📞</span>
+                            <div>
+                                <strong>Customer Service:</strong><br>
+                                (555) FRESH-99 / (555) 373-7499
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="me-2">✉️</span>
+                            <div>
+                                <strong>Email:</strong><br>
+                                support@freshmartonline.com
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <span class="me-2">🕒</span>
+                            <div>
+                                <strong>Delivery Hours:</strong><br>
+                                Mon-Sun: 7:00 AM - 11:00 PM<br>
+                                <small class="text-warning">Same-day delivery available!</small>
+                            </div>
+                        </div>
+                        <div class="border-start border-primary border-3 ps-3">
+                            <small class="text-info">
+                                <strong>💎 Premium Members:</strong><br>
+                                Free delivery on orders over $35<br>
+                                Exclusive discounts & early access
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <!-- Bottom Footer -->
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 mb-3 mb-lg-0">
+                    <p class="mb-0 text-light">
+                        &copy; 2025 <strong>FreshMart Online</strong>. All rights reserved. 
+                        <span class="text-primary">|</span> 
+                        Powered by <a href="#" class="text-primary text-decoration-none">Ranganath Thammineni</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 text-lg-end">
+                    <div class="d-flex flex-wrap justify-content-lg-end justify-content-start gap-3">
+                        <a href="#" class="text-light text-decoration-none small hover-link">🔒 Privacy Policy</a>
+                        <span class="text-light">|</span>
+                        <a href="#" class="text-light text-decoration-none small hover-link">📋 Terms of Service</a>
+                        <span class="text-light">|</span>
+                        <a href="#" class="text-light text-decoration-none small hover-link">🚚 Shipping Info</a>
+                        <span class="text-light">|</span>
+                        <a href="#" class="text-light text-decoration-none small hover-link">🍃 Sustainability</a>
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-light">
+                            <span class="badge bg-success me-2">✓ SSL Secured</span>
+                            <span class="badge bg-info me-2">✓ Quality Assured</span>
+                            <span class="badge bg-warning text-dark">⚡ Fast Delivery</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 

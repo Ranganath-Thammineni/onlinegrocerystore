@@ -1,11 +1,242 @@
- body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: lightblue;
-    }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-.info{
-    height: 90vh;
-    background-image: url("https://wallpapers.com/images/featured/grocery-store-background-c41zd4y08ityrnw1.jpg");
-    background-size: cover; 
+/* Hero Section Enhancements */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.hero img {
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+/* Card Hover Effects */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+/* Feature Icons Animation */
+.features .rounded-circle {
+    transition: all 0.3s ease;
+}
+
+.features .card:hover .rounded-circle {
+    transform: scale(1.1);
+}
+
+/* Button Enhancements */
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Navbar Enhancements */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: rotate(360deg);
+}
+
+/* Category Cards */
+.categories .card-img-top {
+    transition: all 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.categories .card:hover .card-img-top {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+
+/* Testimonials */
+.testimonials .card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+/* Footer Enhancements */
+footer {
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%) !important;
+}
+
+footer .hover-link:hover {
+    color: #fff !important;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+footer .badge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+}
+
+footer .border-start {
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer img {
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+footer img:hover {
+    filter: brightness(1.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .hero, .features {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .lead {
+        font-size: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Star Rating */
+.text-warning {
+    color: #ffc107 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Testimonial Card Enhancements */
+.testimonial-card {
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15)!important;
+}
+
+.testimonial-card img {
+    transition: transform 0.3s ease;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.testimonial-card:hover img {
+    transform: scale(1.1);
+}
+
+.testimonial-card .badge {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.carousel-control-prev div,
+.carousel-control-next div {
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover div,
+.carousel-control-next:hover div {
+    transform: scale(1.1);
+    background-color: #0056b3 !important;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.blockquote p {
+    font-style: italic;
+    line-height: 1.6;
 }
