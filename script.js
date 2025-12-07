@@ -112,13 +112,14 @@ app.get("/inventory", (req, res) => {
       html += `
             <div class="col">
                 <div class="card h-100">
-                    <img src="${product.image_url}" class="card-img-top" alt="${product.name}">
+                    <img src="${product.image_url}" class="card-img-top" alt="${product.name}" style="height: 300px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.description}</p>
                     </div>
-                    <div class="card-footer">
-                        <small class="text-muted">$${product.price}</small>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span class="text-primary fw-bold fs-5">$${product.price}</span>
+                        <button class="btn btn-success btn-sm" onclick="addToCart('${product.name.replace(/'/g, "\\'")}', ${product.price})">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -129,6 +130,69 @@ app.get("/inventory", (req, res) => {
     html += `
         </div>
     </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header bg-primary text-white">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul id="cartItems" class="list-group mb-3">
+          <!-- Cart items will be added here -->
+        </ul>
+        <div class="d-flex justify-content-between align-items-center mb-3 border-top pt-3">
+            <strong class="fs-5">Total:</strong>
+            <span id="cartTotal" class="fs-5 fw-bold text-primary">$0.00</span>
+        </div>
+        <button class="btn btn-success w-100 py-2" onclick="alert('Proceeding to checkout...')">Checkout</button>
+      </div>
+    </div>
+
+    <script>
+        let cart = [];
+        const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+
+        function addToCart(name, price) {
+            cart.push({name, price});
+            updateCartDisplay();
+            cartOffcanvas.show();
+        }
+
+        function updateCartDisplay() {
+            const cartList = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+            cartList.innerHTML = '';
+            let total = 0;
+
+            if (cart.length === 0) {
+                cartList.innerHTML = '<li class="list-group-item text-center text-muted">Your cart is empty</li>';
+            } else {
+                cart.forEach((item, index) => {
+                    total += parseFloat(item.price);
+                    cartList.innerHTML += \`
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                \${item.name}
+                                <div class="small text-muted">$\${item.price}</div>
+                            </div>
+                            <button class="btn btn-sm btn-outline-danger" onclick="removeFromCart(\${index})">&times;</button>
+                        </li>
+                    \`;
+                });
+            }
+
+            cartTotal.textContent = '$' + total.toFixed(2);
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartDisplay();
+        }
+        
+        // Initialize empty cart
+        updateCartDisplay();
+    </script>
 </body>
 </html>
     `;

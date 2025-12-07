@@ -8,25 +8,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Add Product</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
-    label {
-      display: block;
-      margin-top: 15px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-    }
-  </style>
 </head>
 <body>
     <header>
@@ -57,19 +38,44 @@
   </nav>
     </header> 
 
-    <form id="productForm" action="/add-product" method="POST">
-    <label for="name">Product Name:</label>
-    <input type="text" id="name" name="name" required />
-    
-    <label for="description">Description:</label>
-    <textarea id="description" name="description" required></textarea>
-    
-    <label for="price">Price:</label>
-    <input type="number" id="price" name="price" step="0.01" required />
-    
-    <label for="image_url">Image URL:</label>
-    <input type="url" id="image_url" name="image_url" required />
-    
-    <button type="submit">Add Product</button>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Add New Product</h2>
+                        <form id="productForm" action="/add-product" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Product Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required />
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description:</label>
+                                <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Price:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" class="form-control" id="price" name="price" step="0.01" required />
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="image_url" class="form-label">Image URL:</label>
+                                <input type="url" class="form-control" id="image_url" name="image_url" required />
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Add Product</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
